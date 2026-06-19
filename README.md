@@ -86,10 +86,11 @@ Once inside Claude Code, you can:
 
 ## Extending the EEM
 
-### Add new Wikipedia sources
+### Add new sources
+
+Add markdown documents to `sources/`, then run:
 
 ```bash
-expert-build fetch-docs "https://en.wikipedia.org/wiki/..." --depth 0
 expert-build summarize
 expert-build propose-beliefs
 expert-build accept-beliefs
