@@ -1,4 +1,4 @@
-# OO Design EEM (Wikipedia Edition)
+# OO Design EEM
 
 An External Epistemic Memory (EEM) for **Object-Oriented Design**, built with [expert-agent-builder](https://github.com/benthomasson/expert-agent-builder). Sourced entirely from Wikipedia (CC BY-SA 4.0).
 
