@@ -35,14 +35,15 @@ Guide refactoring efforts by identifying which OO patterns apply to existing cod
 Install the CLI tools using [uv](https://docs.astral.sh/uv/):
 
 ```bash
-# Install the expert-agent-builder pipeline tools
-uv tool install git+https://github.com/benthomasson/expert-agent-builder
+# Install the EEM tools
+uv tool install ftl-reasons
+uv tool install ftl-expert-build
 
 # Install Claude Code (the AI agent runtime)
 npm install -g @anthropic-ai/claude-code
 ```
 
-This installs all required CLI tools: `expert-build`, `entry`, and `reasons`.
+This installs the CLI tools: `reasons`, `expert-build`, and `entry`.
 
 ### Clone and set up
 
