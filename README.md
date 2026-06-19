@@ -1,6 +1,6 @@
-# OO Design Expert (Wikipedia Edition)
+# OO Design EEM (Wikipedia Edition)
 
-An AI expert agent for **Object-Oriented Design**, built with [expert-agent-builder](https://github.com/benthomasson/expert-agent-builder). Sourced entirely from Wikipedia (CC BY-SA 4.0).
+An External Epistemic Memory (EEM) for **Object-Oriented Design**, built with [expert-agent-builder](https://github.com/benthomasson/expert-agent-builder). Sourced entirely from Wikipedia (CC BY-SA 4.0).
 
 ## What's in this repo
 
@@ -60,9 +60,9 @@ cd oo-eem
 claude
 ```
 
-Claude Code automatically reads the `CLAUDE.md` file in this repo, which configures it as an OO design expert with access to the belief registry, entries, and knowledge tools.
+Claude Code automatically reads the `CLAUDE.md` file in this repo, which configures it as an OO design EEM with access to the belief registry, entries, and knowledge tools.
 
-### Query the expert
+### Query the EEM
 
 Once inside Claude Code, you can:
 
@@ -83,7 +83,7 @@ Once inside Claude Code, you can:
 > expert-build status
 ```
 
-## Extending the Expert
+## Extending the EEM
 
 ### Add new Wikipedia sources
 
