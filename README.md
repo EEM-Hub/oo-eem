@@ -89,7 +89,7 @@ Once inside Claude Code, you can:
 ### Add new Wikipedia sources
 
 ```bash
-fetch-sources fetch --depth 0 --output-dir sources "https://en.wikipedia.org/wiki/..."
+expert-build fetch-docs "https://en.wikipedia.org/wiki/..." --depth 0
 expert-build summarize
 expert-build propose-beliefs
 expert-build accept-beliefs
