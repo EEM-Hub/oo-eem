@@ -139,6 +139,20 @@ The pipeline flows from Wikipedia articles through summarization and belief extr
 | Max depth | 14 |
 | Sources | 56 Wikipedia articles |
 
+## Exam Results
+
+40-question multiple-choice exam covering GoF patterns, SOLID principles, core OO concepts, and related design principles. Tested across three models in three conditions: with beliefs injected, control (no beliefs), and agentic (model searches the belief database via tool use).
+
+| Model | With Beliefs | Control | Delta | Agentic |
+|-------|-------------|---------|-------|---------|
+| claude:opus | 40/40 (100%) | 40/40 (100%) | +0% | 39/40 (97%) |
+| claude:sonnet | 40/40 (100%) | 40/40 (100%) | +0% | 39/40 (97%) |
+| claude:haiku | 40/40 (100%) | 40/40 (100%) | +0% | 37/40 (92%) |
+
+All models ace the exam at 100% in both beliefs and control conditions — OO design fundamentals are well within training knowledge. The agentic condition (tool-use search over the belief database) slightly hurts: Opus and Sonnet each miss Q38 (LSP canonical violation: the belief database names "circle-ellipse" which is technically equivalent to the expected "rectangle-square"), and Haiku additionally fails two questions due to format parsing errors in tool-calling mode.
+
+Full per-model results are in [`results/`](results/).
+
 ## License
 
 All source content is from [Wikipedia](https://en.wikipedia.org) and licensed under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) / [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). This repository and all derived content is distributed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). See [ATTRIBUTION.md](ATTRIBUTION.md) for the full list of source articles.
