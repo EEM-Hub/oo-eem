@@ -1,6 +1,6 @@
 # Proposed Beliefs
 
-Review each entry: change `[REJECT]` to `[ACCEPT]` to keep, or vice versa.
+Review each entry: change `[ACCEPT]` to `[ACCEPT]` to keep, or vice versa.
 Then run: `expert-build accept-beliefs`
 
 ---
@@ -1818,4 +1818,2039 @@ The Flyweight pattern achieves space optimization by sharing intrinsic (common) 
 Design patterns that imply mutable state may be unsuited for functional programming languages, and some patterns become unnecessary when a language has built-in support for the problem they solve
 - Source: entries/2026/06/19/wiki-Software_design_pattern.md
 - Source URL: https://en.wikipedia.org/wiki/Software_design_pattern
+
+
+---
+
+**Generated:** 2026-11-11
+**Source:** 56 entries from /home/forge/workspace/entries/
+**Model:** openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] dip-goals-loose-coupling-reusability-swappability
+The goal of DIP is loose coupling, increased reusability of high-level policy layers, and the ability to swap low-level implementations without affecting higher-level code.
+- Source: /home/forge/workspace/entries/2026/06/19/dependency-inversion-principle.md
+- Source URL: https://en.wikipedia.org/wiki/Dependency_inversion_principle
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] dip-abstract-layer-enables-low-level-substitution
+Introducing an abstract layer between high-level and low-level modules reduces coupling and enables substitution of low-level implementations.
+- Source: /home/forge/workspace/entries/2026/06/19/dependency-inversion-principle.md
+- Source URL: https://en.wikipedia.org/wiki/Dependency_inversion_principle
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] dip-uses-adapter-for-existing-services
+When lower-level components are closed or existing services must be reused, an Adapter mediates between the service and the DIP abstraction.
+- Source: /home/forge/workspace/entries/2026/06/19/dependency-inversion-principle.md
+- Source URL: https://en.wikipedia.org/wiki/Dependency_inversion_principle
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] dip-excessive-interface-usage-requires-plumbing-code
+Over-generalized interfaces and excessive interface usage demand more plumbing code such as factories and DI frameworks.
+- Source: /home/forge/workspace/entries/2026/06/19/dependency-inversion-principle.md
+- Source URL: https://en.wikipedia.org/wiki/Dependency_inversion_principle
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] dip-is-ioc-applied-to-module-dependencies
+DIP is a specific manifestation of Inversion of Control applied to module dependencies.
+- Source: /home/forge/workspace/entries/2026/06/19/dependency-inversion-principle.md
+- Source URL: https://en.wikipedia.org/wiki/Dependency_inversion_principle
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] dip-mvc-example-controllers-own-abstractions
+In an MVC DIP example, UI and ApplicationLayer contain concrete classes while Controllers contains abstractions, and both concrete layers depend on the controller abstractions.
+- Source: /home/forge/workspace/entries/2026/06/19/dependency-inversion-principle.md
+- Source URL: https://en.wikipedia.org/wiki/Dependency_inversion_principle
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] isp-fat-interface-serves-unrelated-clients
+A fat interface or class serves multiple unrelated clients and exposes every method to every consumer regardless of relevance.
+- Source: /home/forge/workspace/entries/2026/06/19/interface-segregation-principle.md
+- Source URL: https://en.wikipedia.org/wiki/Interface_segregation_principle
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] isp-prevents-cascading-change
+Without ISP, modifying one part of a tightly coupled system forces changes throughout the codebase, a cascading change problem.
+- Source: /home/forge/workspace/entries/2026/06/19/interface-segregation-principle.md
+- Source URL: https://en.wikipedia.org/wiki/Interface_segregation_principle
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] isp-xerox-solution-job-implements-role-interfaces
+In the Xerox ISP solution, the Job class implements segregated interfaces such as IStapleJob, IPrintJob, and IFaxJob, and each client depends only on its relevant interface.
+- Source: /home/forge/workspace/entries/2026/06/19/interface-segregation-principle.md
+- Source URL: https://en.wikipedia.org/wiki/Interface_segregation_principle
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] isp-canonical-violation-atm-transaction-ui
+The canonical ISP violation example is the ATM Transaction UI from Robert C. Martin's 'Agile Software Development' book.
+- Source: /home/forge/workspace/entries/2026/06/19/interface-segregation-principle.md
+- Source URL: https://en.wikipedia.org/wiki/Interface_segregation_principle
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] lsp-formal-definition-property-preservation
+LSP's formal definition is: if S is a subtype of T, then every property provable about T-objects must also hold for S-objects.
+- Source: /home/forge/workspace/entries/2026/06/19/liskov-substitution-principle.md
+- Source URL: https://en.wikipedia.org/wiki/Liskov_substitution_principle
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] lsp-new-exceptions-must-be-subtypes
+LSP signature requirements state that new exceptions thrown by a subtype must be subtypes of exceptions thrown by the supertype.
+- Source: /home/forge/workspace/entries/2026/06/19/liskov-substitution-principle.md
+- Source URL: https://en.wikipedia.org/wiki/Liskov_substitution_principle
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] lsp-mutable-point-subtype-immutable-point-violates-history
+A mutable point as a subtype of an immutable point violates LSP's history constraint.
+- Source: /home/forge/workspace/entries/2026/06/19/liskov-substitution-principle.md
+- Source URL: https://en.wikipedia.org/wiki/Liskov_substitution_principle
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] lsp-mirrors-design-by-contract
+LSP's pre/postcondition and invariant rules directly mirror Bertrand Meyer's Design by Contract methodology, though Meyer's original formulation lacked handling for aliasing.
+- Source: /home/forge/workspace/entries/2026/06/19/liskov-substitution-principle.md
+- Source URL: https://en.wikipedia.org/wiki/Liskov_substitution_principle
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] lsp-circle-ellipse-problem-analogue
+The Circle-Ellipse problem is the geometric analogue of the Rectangle-Square problem and has the same structural LSP violation pattern.
+- Source: /home/forge/workspace/entries/2026/06/19/liskov-substitution-principle.md
+- Source URL: https://en.wikipedia.org/wiki/Liskov_substitution_principle
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] lsp-enables-ocp
+LSP enables the Open/Closed Principle because safely substitutable subtypes allow systems to be extended without modifying existing code.
+- Source: /home/forge/workspace/entries/2026/06/19/liskov-substitution-principle.md
+- Source URL: https://en.wikipedia.org/wiki/Liskov_substitution_principle
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] ocp-polymorphic-version-separates-interface-and-implementation-reuse
+The polymorphic version of OCP deliberately separates interface reuse via inheritance from implementation reuse.
+- Source: /home/forge/workspace/entries/2026/06/19/open-closed-principle.md
+- Source URL: https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] ocp-motivation-changing-code-risks-breaking-clients
+OCP's key motivation is that changing existing code risks breaking existing clients, while extending via new classes or implementations avoids that risk.
+- Source: /home/forge/workspace/entries/2026/06/19/open-closed-principle.md
+- Source URL: https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] ocp-strategy-and-template-method-are-common-vehicles
+Strategy and Template Method patterns are common implementation vehicles for achieving OCP in practice.
+- Source: /home/forge/workspace/entries/2026/06/19/open-closed-principle.md
+- Source URL: https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] ocp-meyer-version-adds-descendants-without-modifying-original
+In Meyer's OCP version, adding a descendant class does not modify the original class or disturb existing clients.
+- Source: /home/forge/workspace/entries/2026/06/19/open-closed-principle.md
+- Source URL: https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] ocp-robustness-principle-related-at-api-boundaries
+The Robustness Principle is a related concern about stability under change, applied at protocol or API boundaries rather than class design.
+- Source: /home/forge/workspace/entries/2026/06/19/open-closed-principle.md
+- Source URL: https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] srp-distinct-roles-are-separate-actors
+In SRP, distinct roles such as accountant and database administrator represent separate actors even if performed by the same person, and each module should serve a single role.
+- Source: /home/forge/workspace/entries/2026/06/19/single-responsibility-principle.md
+- Source URL: https://en.wikipedia.org/wiki/Single-responsibility_principle
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] srp-design-test-more-than-one-actor
+An SRP design test is to ask which actors might request changes to a class; if more than one actor is identified, the class likely violates SRP and should be split.
+- Source: /home/forge/workspace/entries/2026/06/19/single-responsibility-principle.md
+- Source URL: https://en.wikipedia.org/wiki/Single-responsibility_principle
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] srp-violation-increases-coupling
+Violating SRP increases coupling, so changes to one concern risk breaking unrelated concerns in the same module.
+- Source: /home/forge/workspace/entries/2026/06/19/single-responsibility-principle.md
+- Source URL: https://en.wikipedia.org/wiki/Single-responsibility_principle
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] srp-is-class-level-separation-of-concerns
+SRP can be viewed as the class-level application of the broader separation of concerns principle.
+- Source: /home/forge/workspace/entries/2026/06/19/single-responsibility-principle.md
+- Source URL: https://en.wikipedia.org/wiki/Single-responsibility_principle
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] srp-chain-of-responsibility-complements-srp
+The Chain-of-Responsibility pattern can distribute responsibilities across handlers, complementing SRP at the architectural level.
+- Source: /home/forge/workspace/entries/2026/06/19/single-responsibility-principle.md
+- Source URL: https://en.wikipedia.org/wiki/Single-responsibility_principle
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] srp-vs-information-hiding-axis-vs-mechanism
+SRP and information hiding both localize the impact of change; SRP focuses on the axis of change (actor), while information hiding focuses on the mechanism of change (implementation detail).
+- Source: /home/forge/workspace/entries/2026/06/19/single-responsibility-principle.md
+- Source URL: https://en.wikipedia.org/wiki/Single-responsibility_principle
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] solid-addresses-software-rot
+SOLID addresses software rot, the gradual degradation of software quality over time.
+- Source: /home/forge/workspace/entries/2026/06/19/solid-overview.md
+- Source URL: https://en.wikipedia.org/wiki/SOLID
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] ocp-violation-risks-regressions
+Violating the Open-Closed Principle means every new feature risks breaking existing functionality.
+- Source: /home/forge/workspace/entries/2026/06/19/solid-overview.md
+- Source URL: https://en.wikipedia.org/wiki/SOLID
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] isp-violation-produces-fat-interfaces-stubs
+Violating the Interface Segregation Principle leads to fat interfaces that force implementors to provide stub or no-op methods.
+- Source: /home/forge/workspace/entries/2026/06/19/solid-overview.md
+- Source URL: https://en.wikipedia.org/wiki/SOLID
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] lsp-violation-breaks-polymorphism
+Violating the Liskov Substitution Principle breaks polymorphism.
+- Source: /home/forge/workspace/entries/2026/06/19/solid-overview.md
+- Source URL: https://en.wikipedia.org/wiki/SOLID
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] gof-patterns-apply-solid-principles
+Strategy, Template Method, Factory, and Decorator are direct applications of one or more SOLID principles.
+- Source: /home/forge/workspace/entries/2026/06/19/solid-overview.md
+- Source URL: https://en.wikipedia.org/wiki/SOLID
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] abstract-factory-decouples-object-creation-from-usage
+The Abstract Factory pattern decouples object creation from object usage.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Abstract_factory_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Abstract_factory_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] abstract-factory-products-share-family-theme
+All products created by a single concrete Abstract Factory share a common theme or variant.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Abstract_factory_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Abstract_factory_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] abstract-factory-returns-abstract-references
+An Abstract Factory returns a pointer or reference to an abstract type, never the concrete type.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Abstract_factory_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Abstract_factory_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] abstract-factory-implemented-with-factory-methods
+Abstract Factory is often implemented using Factory Methods internally.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Abstract_factory_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Abstract_factory_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] abstract-factory-has-classic-and-modern-variants
+Abstract Factory has a classic structural variant using abstract classes and inheritance and a modern variant using interfaces or protocols with implementation rather than inheritance.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Abstract_factory_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Abstract_factory_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] abstract-type-also-called-existential-type
+Abstract types are also known as existential types.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Abstract_type.md
+- Source URL: https://en.wikipedia.org/wiki/Abstract_type
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] abstract-method-has-no-implementation
+An abstract method or pure virtual function is declared in an abstract type with no implementation, and concrete subtypes must provide the implementation.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Abstract_type.md
+- Source URL: https://en.wikipedia.org/wiki/Abstract_type
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] abstract-type-may-be-incomplete-or-pure
+Abstract types may provide some implemented methods or none; types with no implementation are called protocols, interfaces, signatures, or class types depending on the language.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Abstract_type.md
+- Source URL: https://en.wikipedia.org/wiki/Abstract_type
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] abstract-type-approximated-by-traits-mixins-flavors-roles-type-classes
+Traits, mixins, flavors, roles, and type classes can implement or approximate abstract types.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Abstract_type.md
+- Source URL: https://en.wikipedia.org/wiki/Abstract_type
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] abstract-class-abstractness-signals-four-ways
+An abstract class can be signaled by an explicit keyword, abstract methods, incomplete inheritance, or a dynamic convention.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Abstract_type.md
+- Source URL: https://en.wikipedia.org/wiki/Abstract_type
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] abstract-method-violations-runtime-in-dynamic-languages
+In dynamically typed languages, abstract method violations are detected at runtime, such as Objective-C doesNotRecognizeSelector.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Abstract_type.md
+- Source URL: https://en.wikipedia.org/wiki/Abstract_type
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] abstraction-hides-irrelevant-implementation-details
+Abstraction provides access to functionality while hiding irrelevant implementation details, preserving information relevant in a given context and discarding what is irrelevant.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Abstraction_computer_science.md
+- Source URL: https://en.wikipedia.org/wiki/Abstraction_(computer_science)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] control-abstraction-hides-low-level-operations
+Control abstraction in programming languages hides low-level register and binary operations, letting programmers express computation at higher levels.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Abstraction_computer_science.md
+- Source URL: https://en.wikipedia.org/wiki/Abstraction_(computer_science)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] lookup-table-adts-can-use-hash-bst-or-list
+A lookup table abstract data type can be implemented as a hash table, binary search tree, or linear list.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Abstraction_computer_science.md
+- Source URL: https://en.wikipedia.org/wiki/Abstraction_(computer_science)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] language-abstraction-progression-machine-to-dsl
+Language abstraction progresses from machine language to assembly to high-level languages to scripting and domain-specific languages.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Abstraction_computer_science.md
+- Source URL: https://en.wikipedia.org/wiki/Abstraction_(computer_science)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] abstraction-must-be-sound-not-exact
+Abstractions need not be exact but must be sound, never giving incorrect answers though they may answer I don't know.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Abstraction_computer_science.md
+- Source URL: https://en.wikipedia.org/wiki/Abstraction_(computer_science)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] rice-theorem-makes-abstraction-essential
+Rice's theorem states that non-trivial properties of programs are undecidable, making abstraction essential for reasoning about program behavior.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Abstraction_computer_science.md
+- Source URL: https://en.wikipedia.org/wiki/Abstraction_(computer_science)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] abstraction-scope-requires-domain-legacy-detailed-analysis
+Determining what to abstract in object-oriented design involves domain analysis, legacy analysis, and detailed object-oriented analysis.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Abstraction_computer_science.md
+- Source URL: https://en.wikipedia.org/wiki/Abstraction_(computer_science)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] adapter-naming-convention-classname-to-interface
+Adapter classes conventionally follow the naming pattern ClassNameToInterfaceAdapter, such as DAOToProviderAdapter or LightningToMicroUsbAdapter.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Adapter_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Adapter_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] adapter-constructor-injects-adaptee
+An object adapter constructor typically takes the adaptee as a parameter and stores it as an instance variable.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Adapter_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Adapter_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] adapter-runtime-variant-uses-registry-factory
+The runtime adapter variant uses a registry or factory to look up adapters dynamically, enabling multiple views of the same data source without altering class hierarchies.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Adapter_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Adapter_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] adapter-class-adapter-java-interface-constraint
+Class adapters are constrained in languages like Java before JDK 1.8 that do not support multiple inheritance of classes, so the target must be defined as an interface.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Adapter_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Adapter_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] ports-and-adapters-decouple-domain-from-external
+Ports and Adapters Architecture uses adapters as a core architectural concept to decouple domain logic from external systems.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Adapter_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Adapter_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] adapter-solves-three-interface-problems
+The Adapter pattern solves three specific problems: reusing a class that lacks the required interface, making incompatible interfaces work together, and providing an alternative interface for a class.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Adapter_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Adapter_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] weak-reference-pattern-observer-variant
+The Weak Reference pattern is an Observer pattern variant that decouples observer from observable to prevent memory leaks in environments lacking automatic weak references.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Behavioral_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Behavioral_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] externalize-the-stack-technique
+Externalize the Stack is a behavioral technique that converts recursive functions into iterative ones using an explicit stack.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Behavioral_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Behavioral_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] mediator-centralizes-observer-distributes
+The Mediator pattern centralizes communication through a single coordinator, while the Observer pattern distributes notification directly from subject to dependents.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Behavioral_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Behavioral_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] single-serving-visitor-optimization
+Single-Serving Visitor (SSV) is an optimization of the Visitor pattern for one-time-use traversal scenarios.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Behavioral_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Behavioral_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] iterator-sequential-access-without-exposing-representation
+The Iterator pattern accesses elements sequentially without exposing the underlying representation of the aggregate.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Behavioral_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Behavioral_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] chain-of-responsibility-vs-command
+Chain of Responsibility routes command objects through a chain of handlers, while Command encapsulates actions directly.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Behavioral_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Behavioral_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] bridge-creates-two-layers-of-abstraction
+The Bridge pattern creates two layers of abstraction: one for the abstraction hierarchy and one for the implementation hierarchy.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Bridge_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Bridge_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] bridge-enables-runtime-implementation-selection
+The Bridge pattern enables runtime binding, allowing the implementation to be selected or swapped at runtime, unlike compile-time inheritance binding.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Bridge_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Bridge_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] bridge-vs-strategy
+Both Bridge and Strategy use composition to delegate behavior, but Strategy varies a single algorithm while Bridge separates an entire abstraction from its implementation hierarchy.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Bridge_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Bridge_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] bridge-vs-template-method
+Template Method uses inheritance to vary steps, while Bridge uses composition to vary the entire implementation.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Bridge_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Bridge_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] bridge-complements-abstract-factory
+Bridge can be used together with Abstract Factory, which can create the concrete implementors that the Bridge uses.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Bridge_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Bridge_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] builder-vs-factory-method
+Factory Method uses inheritance (subclass decides object creation) while Builder uses composition (Director delegates to a Builder object).
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Builder_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Builder_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] builder-related-to-currying
+The Builder pattern is related to Currying in that both involve incremental construction or configuration before producing a final result.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Builder_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Builder_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] builder-often-constructs-composite-trees
+Builders are often used to construct Composite trees.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Builder_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Builder_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] builder-mutability-requirement
+In the Builder pattern, builders must be mutable to accumulate state across build steps.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Builder_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Builder_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] builder-defers-compile-time-errors-to-runtime
+The Builder pattern can defer compile-time errors to runtime in null-safe languages.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Builder_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Builder_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] builder-director-controls-step-order
+In the Builder pattern, the Director controls the stepwise creation process, and the order of construction steps matters.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Builder_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Builder_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] builder-client-retrieves-result-from-builder
+In the classic Builder pattern formulation, the Client retrieves the finished product from the Builder, not directly from the Director.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Builder_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Builder_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] cor-dynamic-handler-addition
+New handlers can be added to the end of a Chain of Responsibility dynamically at runtime.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Chain-of-responsibility_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] cor-tree-of-responsibility-variation
+A variation of Chain of Responsibility is the tree of responsibility, where handlers act as dispatchers sending commands in multiple directions, potentially involving recursion (e.g., XML interpreters).
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Chain-of-responsibility_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] cor-collaborates-with-command
+Chain of Responsibility processes command objects and is often used together with the Command pattern.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Chain-of-responsibility_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] cor-handler-srp-alignment
+Each handler in Chain of Responsibility encapsulates responsibility for one type of request, aligning with the Single Responsibility Principle.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Chain-of-responsibility_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] cor-tree-variant-resembles-composite
+The tree-of-responsibility variant of Chain of Responsibility resembles the Composite pattern's recursive structure.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Chain-of-responsibility_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] cor-solves-two-problems
+Chain of Responsibility solves two problems: avoiding sender-receiver coupling and allowing more than one receiver to handle a request.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Chain-of-responsibility_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] object-methods-receive-object-reference
+Object methods receive an implicit or explicit reference to the object, while class methods do not receive an object reference.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Class_computer_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Class_(computer_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] instantiation-allocates-initializes-returns-reference
+Instantiation constructs an object from a class by allocating memory, initializing state, and returning a reference to the object.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Class_computer_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Class_(computer_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] data-fields-define-memory-layout-except-python
+In most languages, class data fields (properties, attributes, member variables) define the memory layout of instances, but Python uses associative key-value containers instead.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Class_computer_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Class_(computer_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] pure-oo-languages-implicit-root-object
+In purely object-oriented languages like Java and C#, all classes implicitly extend a root Object class.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Class_computer_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Class_(computer_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] inner-class-not-tied-to-enclosing-instance
+An inner class is defined within another class but is not necessarily tied to the enclosing instance's lifecycle.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Class_computer_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Class_(computer_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] local-class-scoped-to-block
+A local class is defined within a procedure or function and its name is scoped to that block.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Class_computer_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Class_(computer_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] containment-by-value-ties-lifetimes
+In composition, containment by value ties the lifetimes of the contained and containing objects, while containment by reference does not.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Class_computer_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Class_(computer_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] constructors-destructors-handle-lifecycle
+Constructors and destructors allow custom logic at object lifecycle events (instantiation and destruction).
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Class_computer_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Class_(computer_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] cohesion-high-correlates-with-robustness-reliability-reusability-understandability
+High cohesion correlates with robustness, reliability, reusability, and understandability.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Cohesion_computer_science.md
+- Source URL: https://en.wikipedia.org/wiki/Cohesion_(computer_science)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] high-cohesion-reduces-complexity-improves-maintainability-increases-reusability
+High cohesion reduces complexity, improves maintainability, and increases reusability.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Cohesion_computer_science.md
+- Source URL: https://en.wikipedia.org/wiki/Cohesion_(computer_science)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] cohesion-increases-when-methods-share-functionality-related-activities-grouped-source-files
+Cohesion increases when methods share common functionality, perform a small number of related activities, and related methods are grouped together in source files.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Cohesion_computer_science.md
+- Source URL: https://en.wikipedia.org/wiki/Cohesion_(computer_science)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] coincidental-and-logical-cohesion-empirically-inferior
+Empirical studies show coincidental and logical cohesion are inferior to other cohesion types.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Cohesion_computer_science.md
+- Source URL: https://en.wikipedia.org/wiki/Cohesion_(computer_science)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] communicational-and-sequential-cohesion-empirically-very-good
+Empirical studies show communicational and sequential cohesion are very good.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Cohesion_computer_science.md
+- Source URL: https://en.wikipedia.org/wiki/Cohesion_(computer_science)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] functional-cohesion-empirically-superior
+Empirical studies show functional cohesion is superior.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Cohesion_computer_science.md
+- Source URL: https://en.wikipedia.org/wiki/Cohesion_(computer_science)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] perfect-atomic-cohesion-irreducible-computation
+Perfect or atomic cohesion describes a module that cannot be decomposed further because it is a single irreducible computation.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Cohesion_computer_science.md
+- Source URL: https://en.wikipedia.org/wiki/Cohesion_(computer_science)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] command-object-stores-receiver-reference-and-parameter-values
+A Command object stores a reference to its Receiver via aggregation and holds parameter values for the receiver's method.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Command_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Command_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] command-client-decides-receiver-command-invoker-mappings
+In the Command pattern, the Client decides which receivers map to which commands and which commands map to which invokers.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Command_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Command_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] command-pattern-solves-hardwired-requests-compile-time-coupling
+The Command pattern solves the problem of hard-wiring requests into classes, which couples them at compile-time and prevents runtime configuration.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Command_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Command_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] command-memento-complement-undo-state-vs-operations
+The Command and Memento patterns are often used together for undo: Memento stores state snapshots while Command stores operations.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Command_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Command_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] command-strategy-differ-algorithm-vs-complete-request
+Command and Strategy both encapsulate behavior, but Strategy replaces an algorithm while Command encapsulates a complete request with its receiver.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Command_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Command_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] macrocommand-composite-executes-multiple-commands-as-one
+The Composite pattern enables a MacroCommand that executes multiple commands as one.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Command_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Command_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] command-pattern-enables-serialized-network-remote-execution
+The Command pattern enables entire command objects to be serialized and sent across a network for remote execution.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Command_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Command_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] composite-enables-uniform-treatment-individual-and-composed-objects
+The Composite pattern lets clients treat individual objects and compositions of objects uniformly through a shared Component interface.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Composite_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Composite_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] composite-recursive-aggregation-sums-child-results
+Composite recursive aggregation can compute results such as total price by summing the composite's own value and each child's recursively computed value.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Composite_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Composite_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] composite-uses-has-a-relationship-for-child-components
+Composite objects use a has-a (composition) relationship to hold child Components, not is-a inheritance, for the child collection.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Composite_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Composite_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] composite-fixed-tree-can-omit-child-manipulation-from-component
+If a Composite tree structure is fixed after construction, child-manipulation methods can be omitted from the Component interface entirely.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Composite_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Composite_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] decorator-and-composite-both-use-recursive-composition
+Decorator and Composite patterns are often used together and both rely on recursive composition.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Composite_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Composite_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] visitor-applied-to-composite-defines-operations-without-modifying-component
+Visitor is frequently applied to Composite structures to define operations across heterogeneous node types without modifying the Component classes.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Composite_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Composite_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] flyweight-leaf-nodes-shared-when-no-intrinsic-state
+Leaf nodes in a Composite tree are candidates for Flyweight sharing when they have no intrinsic state.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Composite_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Composite_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] builder-can-construct-composite-trees-step-by-step
+The Builder pattern can construct Composite trees step-by-step.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Composite_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Composite_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] composition-over-inheritance-aka-composite-reuse-with-forwarding
+Composition over inheritance is sometimes called composite reuse or composition with forwarding.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Composition_over_inheritance.md
+- Source URL: https://en.wikipedia.org/wiki/Composition_over_inheritance
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] inheritance-relationships-static-require-recompilation
+Inheritance relationships are static and require recompilation to change behavior.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Composition_over_inheritance.md
+- Source URL: https://en.wikipedia.org/wiki/Composition_over_inheritance
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] java-study-2013-24-percent-inheritance-code-reuse
+A 2013 empirical study of 93 Java projects found roughly 24% of inheritance uses were purely for code reuse.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Composition_over_inheritance.md
+- Source URL: https://en.wikipedia.org/wiki/Composition_over_inheritance
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] inheritance-behavior-combinations-cause-class-explosion
+Using inheritance for different combinations of behaviors can force combinatorial explosion of intermediate classes such as VisibleAndSolid and VisibleAndMovable.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Composition_over_inheritance.md
+- Source URL: https://en.wikipedia.org/wiki/Composition_over_inheritance
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] languages-mitigate-composition-boilerplate-via-delegation-features
+Languages mitigate composition's forwarding boilerplate via features such as Go type embedding, Kotlin built-in delegation syntax, Rust/Swift trait or protocol default implementations, Java 8+/C# 8+ default interface methods, Scala 3 export clauses, and PHP 5.4+ traits.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Composition_over_inheritance.md
+- Source URL: https://en.wikipedia.org/wiki/Composition_over_inheritance
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] inheritance-more-concise-when-base-class-provides-many-defaults
+When a base class provides many default methods and only a few need overriding, inheritance is more concise because composition would require forwarding all methods.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Composition_over_inheritance.md
+- Source URL: https://en.wikipedia.org/wiki/Composition_over_inheritance
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] inheritance-requires-lsp-compliance-composition-avoids-subtyping-contract
+Inheritance requires Liskov Substitution Principle compliance, whereas composition avoids the subtyping contract altogether.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Composition_over_inheritance.md
+- Source URL: https://en.wikipedia.org/wiki/Composition_over_inheritance
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] composition-delegates-swapped-runtime-implement-state-pattern
+Swapping composition delegates at runtime to change behavior is exactly the State pattern.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Composition_over_inheritance.md
+- Source URL: https://en.wikipedia.org/wiki/Composition_over_inheritance
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] coupling-measures-inter-module-interdependence
+Coupling is the degree of interdependence between software modules and measures how closely connected two routines or modules are.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Coupling_computer_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Coupling_(computer_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] pressman-coupling-metric-range-0-67-to-1-0
+The Pressman coupling metric C(module) ranges from approximately 0.67 for low coupling to 1.0 for high coupling.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Coupling_computer_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Coupling_(computer_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] oo-subclass-coupling-child-depends-parent-parent-independent-child
+Subclass coupling is an OO-specific coupling type where the child depends on the parent, but the parent does not depend on the child.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Coupling_computer_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Coupling_(computer_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] oo-temporal-coupling-actions-bundled-by-time-only
+Temporal coupling is an OO-specific coupling type where actions are bundled into one module only because they happen at the same time.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Coupling_computer_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Coupling_(computer_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] dynamic-coupling-measured-runtime-addresses-static-precision-loss
+Dynamic coupling is measured at runtime and addresses precision loss of static metrics when dynamic binding or inheritance is heavily used.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Coupling_computer_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Coupling_(computer_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] semantic-coupling-measures-conceptual-similarity-via-comments-identifiers-lsi
+Semantic coupling measures conceptual similarity between entities using comments, identifiers, and techniques such as Latent Semantic Indexing.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Coupling_computer_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Coupling_(computer_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] logical-evolutionary-coupling-detected-from-release-history
+Logical or evolutionary coupling is detected from release history and identifies modules that tend to change together.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Coupling_computer_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Coupling_(computer_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] coupling-increases-classes-attribute-call-reference-subclass
+Coupling increases between classes A and B if A has an attribute of type B, calls services on B, has a method referencing B as a parameter or return type, or is a subclass of B.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Coupling_computer_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Coupling_(computer_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] creational-patterns-encapsulate-instantiation-knowledge
+Creational patterns encapsulate knowledge of which concrete classes a system uses and how instances of those classes are created and combined.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Creational_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Creational_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] creational-patterns-abstract-instantiation-process
+Creational patterns abstract the instantiation process so a system is independent of how its objects are created, composed, and represented.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Creational_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Creational_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] creator-concretecreator-structure
+In the creational pattern structure, a Creator declares the object interface and returns objects, while a ConcreteCreator implements the object's interface.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Creational_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Creational_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] builder-separates-construction-from-representation
+The Builder pattern separates construction of a complex object from its representation so the same construction process can create different representations.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Creational_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Creational_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] dependency-injection-accepts-objects-from-injector
+Dependency Injection accepts required objects from an injector rather than creating them directly.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Creational_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Creational_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] decorator-wraps-component-forwards-requests
+A Decorator wraps a Component, implements the same interface, forwards all requests to the wrapped object, and adds behavior before or after forwarding.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Decorator_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Decorator_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] decorator-stacking-order-matters
+Multiple decorators can be layered on a single object, and the order of wrapping affects the resulting behavior.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Decorator_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Decorator_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] decorator-holds-component-reference-via-composition
+The Decorator holds a reference to the Component via composition rather than inheriting the Component's state.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Decorator_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Decorator_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] abstract-decorator-forwards-concrete-decorator-overrides
+The abstract Decorator class forwards all methods to the wrapped component, while ConcreteDecorator subclasses override specific methods to add behavior.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Decorator_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Decorator_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] cpp-static-decorator-uses-template-mixin-inheritance
+C++ offers a static decorator variant that uses template or mixin inheritance for compile-time composition.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Decorator_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Decorator_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] delegation-evaluates-member-in-sender-context
+Delegation evaluates a member of a receiver object in the context of a sender object.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Delegation_object-oriented_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Delegation_(object-oriented_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] explicit-delegation-manual-responsibility-passing
+Explicit delegation manually passes responsibilities between objects and works in any object-oriented language.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Delegation_object-oriented_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Delegation_(object-oriented_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] implicit-delegation-requires-language-lookup-support
+Implicit delegation uses language-level method lookup rules and requires language support such as that found in Self or JavaScript.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Delegation_object-oriented_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Delegation_(object-oriented_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] dual-inheritance-requires-lookup-resolution-rules
+When a language supports both delegation and inheritance, dual inheritance introduces method lookup ambiguity that requires additional resolution rules.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Delegation_object-oriented_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Delegation_(object-oriented_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] cocoa-delegation-customizes-framework-behavior
+macOS Cocoa/NeXTStep uses delegation extensively to customize framework component behavior, for example through methods such as windowShouldClose:.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Delegation_object-oriented_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Delegation_(object-oriented_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] design-patterns-book-published-1994-by-gof-authors
+Design Patterns: Elements of Reusable Object-Oriented Software was published in 1994 by Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides, collectively known as the Gang of Four.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Design_Patterns.md
+- Source URL: https://en.wikipedia.org/wiki/Design_Patterns
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] design-patterns-book-sales-and-award
+The Design Patterns book sold over 500,000 copies in 14 languages and received the 2005 ACM SIGPLAN Programming Languages Achievement Award.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Design_Patterns.md
+- Source URL: https://en.wikipedia.org/wiki/Design_Patterns
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] gof-pattern-template-sections
+Each GoF pattern is documented with intent, motivation, applicability, structure, participants, collaborations, consequences, implementation notes, sample code, known uses, and related patterns.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Design_Patterns.md
+- Source URL: https://en.wikipedia.org/wiki/Design_Patterns
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] toolkit-vs-framework-definition
+In the GoF book, a toolkit is an object-oriented subroutine library, while a framework is a set of cooperating classes forming a reusable design.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Design_Patterns.md
+- Source URL: https://en.wikipedia.org/wiki/Design_Patterns
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] parameterized-types-allow-deferred-dependent-types
+Parameterized types such as generics or templates allow types to be defined without specifying all dependent types.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Design_Patterns.md
+- Source URL: https://en.wikipedia.org/wiki/Design_Patterns
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] dan-ingalls-smalltalk-multiple-polymorphism
+Dan Ingalls first described the double dispatch technique in Smalltalk and called it multiple polymorphism.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Double_dispatch.md
+- Source URL: https://en.wikipedia.org/wiki/Double_dispatch
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] eiffel-agent-double-dispatch-approach
+In Eiffel, double dispatch can be implemented by wrapping methods as first-class agent objects and passing them instead of making direct calls.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Double_dispatch.md
+- Source URL: https://en.wikipedia.org/wiki/Double_dispatch
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] double-dispatch-common-use-cases
+Common uses of double dispatch include collision detection, rendering or display on heterogeneous outputs, event handling with typed events and typed handlers, and scheduling or matching algorithms.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Double_dispatch.md
+- Source URL: https://en.wikipedia.org/wiki/Double_dispatch
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] double-dispatch-does-not-solve-expression-problem
+Double dispatch does not solve the expression problem: adding a new shape type requires adding a method to every port or surface class.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Double_dispatch.md
+- Source URL: https://en.wikipedia.org/wiki/Double_dispatch
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] ruby-double-dispatch-shape-delegates-to-port
+In Ruby, double dispatch can eliminate type-case logic by having a shape delegate to a port and pass itself using a type-specific method name such as display_rectangle.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Double_dispatch.md
+- Source URL: https://en.wikipedia.org/wiki/Double_dispatch
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] cpp-access-specifiers-not-information-hiding
+The ISO C++ standard calls public, private, and protected 'access specifiers' rather than information-hiding mechanisms.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Encapsulation_computer_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] cpp-friend-keyword-bypasses-access
+C++ provides the friend keyword for selective access that can bypass private and protected access restrictions.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Encapsulation_computer_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] yo-yo-problem-deep-inheritance-hierarchies
+The yo-yo problem refers to deep inheritance hierarchies that are hard to follow and debug.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Encapsulation_computer_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] encapsulation-reduces-interdependencies-via-stable-interface
+Encapsulation reduces interdependencies between software components by exposing only a stable interface.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Encapsulation_computer_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] facade-delegates-to-subsystem-objects
+A Facade object implements a simplified interface by delegating calls to appropriate subsystem objects internally.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Facade_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Facade_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] facade-client-facade-subsystem-structure
+The Facade pattern's structural arrangement is Client → Facade → {Class1, Class2, Class3}.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Facade_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Facade_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] facade-stepping-stone-refactoring
+Facade can serve as a stepping stone when refactoring monolithic or tightly-coupled systems toward loose coupling.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Facade_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Facade_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] facade-hardware-register-protocols
+Facade is commonly used with hardware register protocols such as Modbus and I2C to abstract indexed-value access.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Facade_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Facade_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] facade-layered-architecture-entry-points
+Facade provides entry points at each layer level in layered architectures.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Facade_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Facade_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] facade-does-not-require-interface-conformance
+Unlike Adapter, Facade does not require the wrapper to conform to a specific interface or support polymorphism.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Facade_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Facade_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] factory-method-participants-four-roles
+Factory Method structure has four participant roles: Creator declares the factory method, ConcreteCreator overrides it to return a ConcreteProduct, Product defines the product interface, and ConcreteProduct implements Product.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Factory_method_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Factory_method_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] factory-method-makes-new-operator-redundant
+Factory Method makes the new operator redundant in client code, decoupling callers from concrete class names.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Factory_method_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Factory_method_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] factory-method-can-use-interface-implementation
+Factory Method can also rely on interface implementation as an alternative to subclassing for deciding which concrete class to instantiate.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Factory_method_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Factory_method_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] abstract-factory-uses-factory-methods
+Abstract Factory is often implemented using Factory Methods; Abstract Factory creates families of related objects while Factory Method creates a single object.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Factory_method_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Factory_method_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] factory-method-real-world-framework-examples
+Factory Method appears in frameworks such as HTML5 DOM Document.createElement(), Qt QMainWindow::createPopupMenu, Java javax.xml.parsers.DocumentBuilderFactory, and ADO.NET IDbCommand.CreateParameter.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Factory_method_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Factory_method_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] simple-factory-not-gof-pattern
+Simple Factory is not one of the GoF design patterns, unlike Factory Method and Abstract Factory.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Factory_method_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Factory_method_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] flyweight-participants-four-roles
+Flyweight participants include Client (supplies extrinsic state), FlyweightFactory (creates/caches via getFlyweight(key)), Flyweight interface (accepts extrinsic state), and ConcreteFlyweight (stores intrinsic state).
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Flyweight_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Flyweight_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] flyweight-word-processor-glyph-example
+The canonical Flyweight example is a word processor where each character references a shared glyph object for font outline, metrics, and formatting data, while only position is stored per character.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Flyweight_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Flyweight_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] hash-consing-shares-flyweight-idea
+Hash consing is the same data-sharing idea as Flyweight and appears in functional programming contexts.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Flyweight_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Flyweight_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] flyweight-often-used-in-composite-structures
+Flyweight is often used within Composite structures, such as shared leaf nodes in a tree.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Flyweight_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Flyweight_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] flyweight-two-caching-strategies-maintained-unmaintained
+Flyweight caching has two strategies: maintained (FIFO, push/pop) and unmaintained (bulk initialization at startup, search-based retrieval).
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Flyweight_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Flyweight_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] flyweight-trades-computation-for-memory
+Flyweight trades computational overhead for memory savings and is beneficial when object count is large and shared state is significant.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Flyweight_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Flyweight_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] flyweight-concurrency-creation-options
+Flyweight concurrency options include pre-instantiating all flyweights (no contention), single-threaded creation (contention, one instance per value), or concurrent creation (no contention, multiple instances per value).
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Flyweight_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Flyweight_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] grasp-indirection-mediates-components
+GRASP's Indirection pattern introduces an intermediate object to mediate between two components, reducing direct coupling; MVC's controller mediating between model and view is a classic example.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-GRASP_object-oriented_design.md
+- Source URL: https://en.wikipedia.org/wiki/GRASP_(object-oriented_design)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] grasp-high-cohesion-focused-responsibilities
+GRASP's High Cohesion keeps each class focused on a single, well-defined set of related responsibilities; low cohesion leads to classes that are hard to comprehend, reuse, and maintain.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-GRASP_object-oriented_design.md
+- Source URL: https://en.wikipedia.org/wiki/GRASP_(object-oriented_design)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] grasp-polymorphism-replaces-conditionals
+GRASP's Polymorphism assigns behavior that varies by type to the varying types via polymorphic operations rather than explicit conditional branching.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-GRASP_object-oriented_design.md
+- Source URL: https://en.wikipedia.org/wiki/GRASP_(object-oriented_design)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] grasp-patterns-not-mutually-exclusive
+GRASP patterns are not mutually exclusive; multiple patterns often apply simultaneously to a single design decision.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-GRASP_object-oriented_design.md
+- Source URL: https://en.wikipedia.org/wiki/GRASP_(object-oriented_design)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] grasp-creator-relates-to-factory
+GRASP's Creator relates to the Factory pattern, which is an alternative when Creator criteria do not apply or more complex creation logic is needed.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-GRASP_object-oriented_design.md
+- Source URL: https://en.wikipedia.org/wiki/GRASP_(object-oriented_design)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] grasp-controller-relates-to-command-facade-layers
+GRASP's Controller relates to the Command pattern, Facade pattern, Layers pattern, and Pure Fabrication.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-GRASP_object-oriented_design.md
+- Source URL: https://en.wikipedia.org/wiki/GRASP_(object-oriented_design)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] info-hiding-protects-against-internal-representation-change
+A module designed with information hiding protects the rest of the program from changes to its internal representation, such as switching a 3D point from three scalars to an array.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Information_hiding.md
+- Source URL: https://en.wikipedia.org/wiki/Information_hiding
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] info-hiding-shifts-dependency-to-interfaces
+In object-oriented programming, information hiding shifts dependency from uncertain implementations onto well-defined interfaces so clients need not change when the implementation changes.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Information_hiding.md
+- Source URL: https://en.wikipedia.org/wiki/Information_hiding
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] booch-encapsulation-separates-contractual-interface-from-implementation
+Grady Booch defined encapsulation as compartmentalizing the elements of an abstraction that constitute its structure and behavior, serving to separate the contractual interface of an abstraction from its implementation.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Information_hiding.md
+- Source URL: https://en.wikipedia.org/wiki/Information_hiding
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] access-modifiers-implement-information-hiding
+Access modifiers such as private, protected, and public in languages like Java and C++ are practical mechanisms for implementing information hiding.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Information_hiding.md
+- Source URL: https://en.wikipedia.org/wiki/Information_hiding
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] law-of-demeter-enforces-information-hiding
+The Law of Demeter is a specific heuristic that enforces information hiding by restricting which objects a method may interact with.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Information_hiding.md
+- Source URL: https://en.wikipedia.org/wiki/Information_hiding
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] info-hiding-primary-benefit-localizes-change
+The primary benefit of information hiding is localizing the impact of change so evolutionary modifications stay local rather than global.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Information_hiding.md
+- Source URL: https://en.wikipedia.org/wiki/Information_hiding
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] well-designed-interface-allows-whole-component-replacement
+A well-designed interface lets a component be replaced entirely as long as the new component supports the same public interface.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Information_hiding.md
+- Source URL: https://en.wikipedia.org/wiki/Information_hiding
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] inheritance-models-is-a-composition-models-has-a
+Inheritance models is-a relationships, while composition models has-a relationships.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Inheritance_object-oriented_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] cpp-derived-classes-do-not-inherit-constructors-destructors-operators-friends
+In C++, child objects acquire all parent properties except constructors, destructors, overloaded operators, and friend functions.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Inheritance_object-oriented_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] csharp-requires-virtual-abstract-override-java-overrides-by-default
+Method overriding rules differ by language: C# requires virtual, abstract, or override; Java allows overriding by default.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Inheritance_object-oriented_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] circle-ellipse-problem-exemplifies-lsp-violation
+The circle-ellipse problem is a classic example of inheritance modeling difficulties and Liskov Substitution Principle violations.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Inheritance_object-oriented_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] inheritance-three-design-constraints-singleness-static-visibility
+Inheritance has three design constraints: singleness (single inheritance limits dual roles), static hierarchy fixed at instantiation, and visibility of superclass data to clients.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Inheritance_object-oriented_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] gosling-would-not-include-implementation-inheritance-in-java-redesign
+James Gosling reportedly said he would not include implementation inheritance if redesigning Java.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Inheritance_object-oriented_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] go-decouples-inheritance-from-subtyping
+The Go programming language decouples inheritance from subtyping entirely.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Inheritance_object-oriented_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] multiple-interface-implementation-avoids-diamond-problem
+A single class can implement multiple interfaces, providing a form of multiple behavioral inheritance without the diamond problem of multiple class inheritance.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Interface_object-oriented_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Interface_(object-oriented_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] cpp-interfaces-modeled-as-pure-abstract-classes
+In C++, interfaces are typically represented as pure abstract classes with all methods abstract and no state.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Interface_object-oriented_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Interface_(object-oriented_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] python-duck-typing-provides-implicit-interfaces
+In Python, duck typing lets any class that implements the expected methods satisfy an interface contract implicitly.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Interface_object-oriented_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Interface_(object-oriented_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] python-collections-abc-iterable-provides-explicit-interface
+Python supports explicit interfaces through Abstract Base Classes such as collections.abc.Iterable.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Interface_object-oriented_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Interface_(object-oriented_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] interfaces-model-can-do-capabilities-inheritance-models-is-a
+Inheritance models is-a relationships between classes, while interfaces model can-do capabilities.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Interface_object-oriented_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Interface_(object-oriented_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] interfaces-enable-subtype-polymorphism
+Interfaces enable subtype polymorphism so code written against an interface works with any implementing class.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Interface_object-oriented_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Interface_(object-oriented_programming)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] interpreter-terminal-expressions-interpret-directly-nonterminal-delegate
+In the Interpreter pattern, terminal expressions interpret directly without delegating to children, while nonterminal expressions delegate interpretation to their child expressions.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Interpreter_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Interpreter_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] interpreter-context-carries-global-state
+The Interpreter pattern's Context object carries global state needed during interpretation, such as variable bindings.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Interpreter_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Interpreter_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] interpreter-expressions-expose-replace-and-copy-operations
+Interpreter pattern expressions commonly expose replace and copy operations in addition to interpret.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Interpreter_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Interpreter_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] flyweight-can-share-interpreter-terminal-expressions
+Terminal expressions that appear many times in an Interpreter AST can be shared using the Flyweight pattern.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Interpreter_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Interpreter_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] iterator-traverses-interpreter-ast
+The Iterator pattern is used to traverse the composite AST structure evaluated by the Interpreter pattern.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Interpreter_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Interpreter_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] interpreter-avoids-hard-wiring-expressions-into-classes
+The Interpreter pattern avoids hard-wiring expressions directly into classes, which would make adding or changing expressions require modifying the class.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Interpreter_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Interpreter_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] interpreter-used-for-sql-regex-embedded-dsls
+The Interpreter pattern is used in real-world systems such as SQL query languages, regular expressions, and embedded domain-specific languages.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Interpreter_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Interpreter_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] ioc-enables-runtime-binding-through-abstractions
+Inversion of Control enables dynamic flow through abstractions by determining the concrete object satisfying a dependency at runtime rather than compile time.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Inversion_of_control.md
+- Source URL: https://en.wikipedia.org/wiki/Inversion_of_control
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] ioc-requires-compatible-interfaces-for-runtime-binding
+Inversion of Control requires objects to have compatible interfaces for runtime binding, such as class A delegating to interface I implemented by class B.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Inversion_of_control.md
+- Source URL: https://en.wikipedia.org/wiki/Inversion_of_control
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] ioc-enables-independent-development-of-framework-and-application-code
+Inversion of Control allows reusable framework code and problem-specific application code to be developed independently while operating together.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Inversion_of_control.md
+- Source URL: https://en.wikipedia.org/wiki/Inversion_of_control
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] service-locator-alternative-to-di-for-runtime-binding
+The Service Locator pattern is an alternative to dependency injection for achieving runtime binding of dependencies.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Inversion_of_control.md
+- Source URL: https://en.wikipedia.org/wiki/Inversion_of_control
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] callbacks-are-basic-ioc-mechanism
+Callbacks are the most basic mechanism for Inversion of Control: passing a function to be called by the framework.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Inversion_of_control.md
+- Source URL: https://en.wikipedia.org/wiki/Inversion_of_control
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] ioc-term-dates-to-1988-related-to-jackson-program-inversion
+The term Inversion of Control dates to 1988 and relates to Michael Jackson's program inversion concept from the 1970s.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Inversion_of_control.md
+- Source URL: https://en.wikipedia.org/wiki/Inversion_of_control
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] html-dom-event-listener-exemplifies-ioc
+Registering a DOM event listener with document.addEventListener('click', listener, true) exemplifies Inversion of Control because the browser framework controls the event loop and invokes the supplied handler.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Inversion_of_control.md
+- Source URL: https://en.wikipedia.org/wiki/Inversion_of_control
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] iterator-client-interaction-sequence
+The typical Iterator interaction sequence is: the client calls createIterator() on an Aggregate, the Aggregate creates and returns a ConcreteIterator, and the client calls hasNext()/next() on the iterator.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Iterator_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Iterator_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] cpp-and-python-standardize-iterator-syntax
+C++ and Python are notable for standardizing iterator syntax at the language level.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Iterator_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Iterator_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] cpp-iterators-model-concepts-enabling-compile-time-polymorphism
+In C++, iterators model 'concepts' (named sets of requirements), enabling compile-time polymorphism via templates.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Iterator_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Iterator_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] placing-traversal-operations-in-aggregate-interface-is-inflexible
+Placing traversal operations directly in the aggregate interface is inflexible because it commits the aggregate to specific traversal operations and prevents adding new ones without interface changes.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Iterator_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Iterator_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] some-algorithms-are-necessarily-container-specific
+Not all algorithms can be fully decoupled from containers — some are necessarily container-specific.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Iterator_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Iterator_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] lod-three-summary-rules
+The Law of Demeter has three summary rules: (1) each unit should have limited knowledge about other units — only closely related ones; (2) only talk to friends, not strangers; (3) only talk to immediate friends.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Law_of_Demeter.md
+- Source URL: https://en.wikipedia.org/wiki/Law_of_Demeter
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] lod-named-after-demeter-greek-goddess
+The Law of Demeter is named after Demeter, the Greek goddess of agriculture, reflecting a 'growing software' (bottom-up) philosophy rather than 'building software.'
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Law_of_Demeter.md
+- Source URL: https://en.wikipedia.org/wiki/Law_of_Demeter
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] lod-fix-pattern-modify-collaborator-interface-or-direct-reference
+To fix a Law of Demeter violation, either modify the intermediate object's interface to serve the request directly (propagating internally) or give the caller a direct reference to the target object.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Law_of_Demeter.md
+- Source URL: https://en.wikipedia.org/wiki/Law_of_Demeter
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] lod-and-aop-both-originated-from-demeter-project
+The Demeter Project birthed both the Law of Demeter and aspect-oriented programming (AOP) ideas; AOP is proposed as a solution to LoD's wrapper method proliferation.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Law_of_Demeter.md
+- Source URL: https://en.wikipedia.org/wiki/Law_of_Demeter
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] tell-dont-ask-idiom-reinforces-lod
+The Tell, Don't Ask idiom reinforces the Law of Demeter by pushing behavior to the object that owns the data.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Law_of_Demeter.md
+- Source URL: https://en.wikipedia.org/wiki/Law_of_Demeter
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] lod-also-known-as-dont-talk-to-strangers
+The Law of Demeter is also known as 'Don't talk to strangers' (per Larman's Applying UML and Patterns).
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Law_of_Demeter.md
+- Source URL: https://en.wikipedia.org/wiki/Law_of_Demeter
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] mediator-solves-tight-coupling-problems
+The Mediator pattern addresses tight coupling between interacting objects, which otherwise makes them hard to implement, change, test, and reuse.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Mediator_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Mediator_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] mediator-enables-independent-interaction-logic
+The Mediator pattern allows the interaction logic to be changed independently from the colleague objects themselves.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Mediator_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Mediator_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] mediator-is-not-broker-pattern
+The Mediator pattern is not the same as the Broker pattern — despite superficial similarity, they solve different problems.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Mediator_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Mediator_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] mediator-improves-colleague-reusability-and-testability
+The Mediator pattern improves reusability and testability of individual colleague classes.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Mediator_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Mediator_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] mediator-event-based-variant-uses-subscription
+In an event-based Mediator variant (e.g., chat room), the mediator exposes an event, colleagues subscribe to it on construction, sending goes through mediator.Send(), and receiving is handled by event callbacks.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Mediator_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Mediator_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] memento-caretaker-can-maintain-list-of-mementos
+A Caretaker can maintain a list or stack of mementos, enabling multi-level undo or selective rollback.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Memento_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Memento_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] memento-prng-seed-canonical-example
+The canonical Memento example is a pseudorandom number generator (PRNG) where the seed acts as the memento — restoring the seed reproduces the same sequence.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Memento_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Memento_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] memento-originator-operations-createMemento-restore
+The Originator interface in the Memento pattern provides createMemento() to capture current internal state into a new Memento and restore(memento) to reset internal state from a given Memento.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Memento_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Memento_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] memento-alternative-implementations-serialization-package-proxy
+Beyond inner class, Memento can be implemented via serialization, package-private or module-scoped classes, or proxy-based access.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Memento_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Memento_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] memento-can-save-iterator-position
+An Iterator's position can be saved and restored via Memento.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Memento_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Memento_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] memento-analogous-to-version-control-commit
+Conceptually, each version control commit is a memento of repository state.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Memento_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Memento_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] mixin-is-interface-with-implemented-methods
+A mixin can be viewed as an interface that also provides method implementations, not just a contract.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Mixin.md
+- Source URL: https://en.wikipedia.org/wiki/Mixin
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] mixin-enforces-dependency-inversion-principle
+The mixin pattern is an example of enforcing the dependency inversion principle.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Mixin.md
+- Source URL: https://en.wikipedia.org/wiki/Mixin
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] mixin-scala-uses-with-keyword
+In Scala, traits are mixed in using extends for the first trait (or superclass) and with for subsequent traits; per-instance mixin is possible via anonymous types.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Mixin.md
+- Source URL: https://en.wikipedia.org/wiki/Mixin
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] mixin-rust-traits-default-methods
+Rust traits serve as mixins with default method implementations that implementing types can selectively override.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Mixin.md
+- Source URL: https://en.wikipedia.org/wiki/Mixin
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] mixin-swift-protocol-extensions-default-implementations
+Swift implements mixin-like behavior via protocol extensions with default method implementations.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Mixin.md
+- Source URL: https://en.wikipedia.org/wiki/Mixin
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] mixin-vs-traits-linear-composition
+Traits are closely related to mixins but do not require linear composition, while mixins typically do.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Mixin.md
+- Source URL: https://en.wikipedia.org/wiki/Mixin
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] mixin-aop-with-interfaces-can-produce-full-mixins
+Aspect-oriented programming combined with interfaces can produce full-fledged mixins in languages like C# and Java.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Mixin.md
+- Source URL: https://en.wikipedia.org/wiki/Mixin
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] mixin-simulated-by-extension-methods-in-csharp-dart
+C# and Dart simulate mixin behavior on interfaces using extension methods without modifying the original classes.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Mixin.md
+- Source URL: https://en.wikipedia.org/wiki/Mixin
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] mvc-model-maps-to-database-table-via-orm
+In web frameworks, the MVC Model typically maps to a database table via an ORM.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-ModelE28093viewE28093controller.md
+- Source URL: https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] mvc-web-views-are-html-templates
+In web MVC frameworks, views are typically HTML templates rather than composable widget objects.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-ModelE28093viewE28093controller.md
+- Source URL: https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] mvc-web-controller-handles-http-requests
+In web MVC frameworks, the Controller receives HTTP requests, interacts with models, and selects views for the response.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-ModelE28093viewE28093controller.md
+- Source URL: https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] rails-view-one-to-one-with-controller-action
+In Rails, each view typically has a one-to-one relationship with a controller action.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-ModelE28093viewE28093controller.md
+- Source URL: https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] fowler-2003-mvc-input-controller
+Martin Fowler's Patterns of Enterprise Application Architecture (2003) defined MVC with an 'input controller' that receives requests, messages models, and passes responses to views.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-ModelE28093viewE28093controller.md
+- Source URL: https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] web-mvc-evolved-from-thin-client-to-ajax
+Early web MVC used a thin-client approach with all logic server-side; later frameworks added Ajax for client-side MVC execution.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-ModelE28093viewE28093controller.md
+- Source URL: https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] ooad-conceptual-model-implementation-independent
+The OOAD conceptual model is explicitly implementation-independent, containing no concurrency or storage details.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Object-oriented_design.md
+- Source URL: https://en.wikipedia.org/wiki/Object-oriented_design
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] ood-activities-include-class-diagrams-design-patterns-orm
+OOD activities include defining objects/attributes, creating class diagrams from conceptual models, applying design patterns, identifying persistent objects, designing an ORM strategy, and identifying remote objects.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Object-oriented_design.md
+- Source URL: https://en.wikipedia.org/wiki/Object-oriented_design
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] uml-class-diagram-static-structure
+A UML class diagram shows static structure with classes, attributes, and relationships, and can be auto-generated from sequence diagram analysis.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Object-oriented_design.md
+- Source URL: https://en.wikipedia.org/wiki/Object-oriented_design
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] uml-sequence-diagram-object-interactions-over-time
+A UML sequence diagram shows object interactions over time as horizontal arrows between parallel vertical lifelines.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Object-oriented_design.md
+- Source URL: https://en.wikipedia.org/wiki/Object-oriented_design
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] unified-process-rup-common-ooad-framework
+The Unified Process / RUP is the iterative framework most commonly used to execute OOAD.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Object-oriented_design.md
+- Source URL: https://en.wikipedia.org/wiki/Object-oriented_design
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] grasp-guides-responsibility-assignment
+GRASP (General Responsibility Assignment Software Patterns) is a set of OO design principles that guide responsibility assignment during OOD.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Object-oriented_design.md
+- Source URL: https://en.wikipedia.org/wiki/Object-oriented_design
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] oop-definition-contested-multi-paradigm
+OOP is not a single fixed definition but a contested set of features, and most modern languages are multi-paradigm.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Object-oriented_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Object-oriented_programming
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] objects-are-class-instances-or-prototype-linked
+Objects are instances of classes in class-based OOP or linked to prototypes in prototype-based OOP.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Object-oriented_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Object-oriented_programming
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] encapsulation-includes-cohesion-decoupling-data-hiding
+Encapsulation bundles related data and methods and involves three related ideas: cohesion, decoupling, and data hiding.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Object-oriented_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Object-oriented_programming
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] inheritance-class-based-or-prototype-based
+Inheritance can be class-based (subclass extends superclass) or prototype-based (object delegates to prototype).
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Object-oriented_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Object-oriented_programming
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] object-relational-impedance-mismatch-structural-disconnect
+Object-relational impedance mismatch is the structural disconnect between OOP objects and relational database tables, addressed by ORM tools but never perfectly solved.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Object-oriented_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Object-oriented_programming
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] smalltalk-introduced-message-passing-dynamic-class-modification
+Smalltalk, developed in the 1970s at Xerox PARC under Alan Kay, introduced OOP as message-passing between cell-like objects and fully dynamic class modification.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Object-oriented_programming.md
+- Source URL: https://en.wikipedia.org/wiki/Object-oriented_programming
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] observer-one-to-many-dependency
+The Observer pattern establishes a one-to-many dependency where a single subject notifies multiple observers of state changes.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Observer_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Observer_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] observer-subject-knows-only-update-interface
+In the Observer pattern, the subject only knows that observers implement the update() interface, not their concrete types.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Observer_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Observer_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] observer-registration-dynamic-runtime
+Observers in the Observer pattern register themselves at runtime and can be added or removed dynamically.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Observer_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Observer_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] observer-throttling-polling-for-high-frequency-changes
+For high-frequency state changes such as progress bars, observers can poll at intervals rather than reacting to every change, a technique called throttling.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Observer_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Observer_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] mediator-encapsulates-interaction-vs-observer-broadcast
+The Mediator pattern centralizes communication between objects by encapsulating interaction logic, whereas Observer broadcasts notifications directly to observers.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Observer_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Observer_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] ecs-often-uses-observer
+Entity-Component-System (ECS) architectures often use the Observer pattern internally.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Observer_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Observer_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] polymorphism-single-interface-multiple-types
+Polymorphism allows a single interface, operation, or symbol to work across multiple types; in OOP it is the provision of one interface to entities of different data types.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Polymorphism_computer_science.md
+- Source URL: https://en.wikipedia.org/wiki/Polymorphism_(computer_science)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] coercion-polymorphism-is-ad-hoc
+Coercion polymorphism, implicit type conversion, is classified as a form of ad hoc polymorphism.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Polymorphism_computer_science.md
+- Source URL: https://en.wikipedia.org/wiki/Polymorphism_(computer_science)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] parametric-polymorphism-uniform-generic-static-type-safety
+Parametric polymorphism writes code generically using abstract type variables, handles values uniformly regardless of type, and maintains full static type safety.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Polymorphism_computer_science.md
+- Source URL: https://en.wikipedia.org/wiki/Polymorphism_(computer_science)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] polymorphic-data-type-parameterized-by-type-variable
+A polymorphic data type is a data type parameterized by a type variable, such as List<T>.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Polymorphism_computer_science.md
+- Source URL: https://en.wikipedia.org/wiki/Polymorphism_(computer_science)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] row-polymorphism-operates-on-structural-types
+Row polymorphism operates on structural types and allows values whose types have certain properties without losing remaining type information, distinct from subtyping.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Polymorphism_computer_science.md
+- Source URL: https://en.wikipedia.org/wiki/Polymorphism_(computer_science)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] polytypism-more-general-than-polymorphism
+Polytypism (data type genericity) is more general than polymorphism because functions are defined over the structure of data types themselves.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Polymorphism_computer_science.md
+- Source URL: https://en.wikipedia.org/wiki/Polymorphism_(computer_science)
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] prototype-solves-runtime-type-and-dynamic-loading
+The Prototype pattern solves two problems: determining the concrete type at runtime, and instantiating dynamically loaded classes.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Prototype_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Prototype_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] clone-over-new-preserves-state
+clone() is preferred over new when you need a duplicate that preserves the original object's state (e.g., bank account transaction processing), rather than a default-initialized instance.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Prototype_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Prototype_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] prototype-distinct-from-prototype-based-programming
+The Prototype pattern is not the same as prototype-based programming (a language paradigm, e.g., JavaScript) or function prototypes (forward declarations).
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Prototype_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Prototype_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] prototype-benefits-composite-decorator-copying
+Designs heavy in Composite or Decorator often benefit from Prototype for copying complex object structures.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Prototype_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Prototype_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] prototype-factory-clones-prototypes-on-request
+In the Prototype pattern, a client constructs a factory with prototype instances, then calls factory methods which internally delegate to clone().
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Prototype_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Prototype_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] proxy-three-participants-subject-realsubject-proxy
+The Proxy pattern structure has three participants: Subject (interface), RealSubject (the actual object), and Proxy (holds a reference to RealSubject and forwards requests to it).
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Proxy_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Proxy_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] remote-proxy-translates-calls-to-remote-invocations
+In a remote proxy, method calls on the proxy translate to remote method invocations.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Proxy_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Proxy_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] decorator-stacks-wrappers-proxy-stands-alone
+Decorator typically stacks multiple wrappers; Proxy usually stands alone as a single wrapper.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Proxy_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Proxy_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] facade-simplifies-subsystem-proxy-wraps-single-object
+Facade simplifies a complex subsystem behind a new interface; Proxy wraps a single object with the same interface.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Proxy_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Proxy_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] virtual-proxy-caches-real-object-after-first-load
+In a virtual proxy, the first call to the proxy's method triggers the expensive load; subsequent calls reuse the cached real object.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Proxy_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Proxy_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] pubsub-semantic-coupling-brittleness
+Pub/sub can introduce semantic/format coupling between publishers and subscribers, leading to brittleness over time.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-PublishE28093subscribe_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] pubsub-broker-based-centralized-topology
+In broker-based (centralized) pub/sub, a message broker/event bus receives messages from publishers and routes them to subscribers, potentially performing store-and-forward, priority queuing, or routing logic.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-PublishE28093subscribe_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] pubsub-brokerless-decentralized-topology
+In brokerless (decentralized) pub/sub, publishers and subscribers discover each other directly (e.g., DDS using IP multicast) and require overlay networks, often Small-World topologies.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-PublishE28093subscribe_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] pubsub-subscription-timing-three-options
+Pub/sub subscriptions can be established at build time (hardcoded handlers), initialization time (XML config), or runtime (dynamic add/remove).
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-PublishE28093subscribe_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] pubsub-evolved-from-observer-pattern
+Pub/sub evolved from the Observer pattern to support distributed, asynchronous use cases.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-PublishE28093subscribe_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] pubsub-component-within-mom
+Pub/sub is typically a component within message-oriented middleware (MOM) systems.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-PublishE28093subscribe_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] pubsub-broker-acts-as-mediator
+The broker in pub/sub acts as a mediator between publishers and subscribers.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-PublishE28093subscribe_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] soc-definition-concern-independent-aspect
+In SoC, a concern is any aspect or issue of a system that can be considered independently, such as correctness, efficiency, security, presentation, or data flow.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Separation_of_concerns.md
+- Source URL: https://en.wikipedia.org/wiki/Separation_of_concerns
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] soc-reduces-complexity-via-independent-analysis
+Separation of concerns reduces complexity by allowing independent analysis, design, and modification of each concern.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Separation_of_concerns.md
+- Source URL: https://en.wikipedia.org/wiki/Separation_of_concerns
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] soc-good-soc-leads-low-coupling-high-cohesion
+Good separation of concerns leads to low coupling between modules and high cohesion within them.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Separation_of_concerns.md
+- Source URL: https://en.wikipedia.org/wiki/Separation_of_concerns
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] srp-is-soc-at-class-module-level
+The Single Responsibility Principle (SRP) is an application of SoC at the class/module level.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Separation_of_concerns.md
+- Source URL: https://en.wikipedia.org/wiki/Separation_of_concerns
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] html-css-js-canonical-web-soc-example
+The separation of HTML (content), CSS (presentation), and JavaScript (behavior) is a canonical web example of SoC.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Separation_of_concerns.md
+- Source URL: https://en.wikipedia.org/wiki/Separation_of_concerns
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] osi-protocol-stack-canonical-soc-example
+The OSI/Internet protocol stack (application, transport, internet, link) is a canonical example of SoC where each layer addresses a distinct concern.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Separation_of_concerns.md
+- Source URL: https://en.wikipedia.org/wiki/Separation_of_concerns
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] marr-levels-of-analysis-apply-soc
+David Marr's levels of analysis (computational, algorithmic, implementation) apply SoC in cognitive science/AI.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Separation_of_concerns.md
+- Source URL: https://en.wikipedia.org/wiki/Separation_of_concerns
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] ghezzi-soc-primary-complexity-technique
+Carlo Ghezzi promotes SoC as the primary way to tackle inherent complexity in software production.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Separation_of_concerns.md
+- Source URL: https://en.wikipedia.org/wiki/Separation_of_concerns
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] singleton-name-from-mathematical-singleton
+The Singleton pattern's name derives from the mathematical concept of a singleton (a set with exactly one element).
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Singleton_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Singleton_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] singleton-preferred-over-global-variables
+Singleton is preferred over global variables because it does not pollute the global namespace and supports lazy allocation/initialization.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Singleton_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Singleton_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] facade-frequently-singleton
+Facade objects are frequently implemented as Singletons since only one facade is typically needed.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Singleton_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Singleton_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] multiton-generalizes-singleton-named-instances
+The Multiton pattern generalizes Singleton by managing a map of named instances rather than a single one.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Singleton_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Singleton_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] singleton-lazy-vs-eager-initialization
+Singleton lazy initialization defers instance creation until first use, while eager initialization creates the instance at class load time.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Singleton_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Singleton_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] cpp-singleton-deletes-copy-constructor-assignment
+In C++, the Singleton pattern requires deleting the copy constructor and assignment operator to prevent copying.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Singleton_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Singleton_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] initialization-on-demand-holder-idiom-java-alternative
+The initialization-on-demand holder idiom is a Java-specific thread-safe alternative to double-checked locking for Singleton.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Singleton_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Singleton_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] gof-pattern-documentation-format-thirteen-sections
+The GoF documentation format for a pattern includes Name, Intent, Also Known As, Motivation, Applicability, Structure, Participants, Collaboration, Consequences, Implementation, Sample Code, Known Uses, and Related Patterns.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Software_design_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Software_design_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] portland-pattern-repository-ward-cunningham-documentation-hub
+The Portland Pattern Repository (Ward Cunningham) served as a central documentation hub for patterns.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Software_design_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Software_design_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] pattern-indirection-can-decrease-runtime-performance
+Design patterns introduce indirection that can decrease runtime performance.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Software_design_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Software_design_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] meyer-arnout-componentized-two-thirds-of-patterns-attempted
+Meyer and Arnout achieved full or partial componentization of two-thirds of the design patterns they attempted.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Software_design_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Software_design_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] concurrency-patterns-include-active-object-double-checked-locking-monitor-object-reactor-read-write-lock-thread-pool-thread-specific-storage
+Concurrency patterns include Active Object, Double-Checked Locking, Monitor Object, Reactor, Read-Write Lock, Thread Pool, and Thread-Specific Storage.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Software_design_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Software_design_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] state-pattern-state-interface-declares-handle-method
+In the State pattern, the State interface declares a handle() method for state-specific behavior.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-State_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/State_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] state-pattern-documented-gof-1995-page-305
+The State pattern is documented in Design Patterns: Elements of Reusable Object-Oriented Software (GoF, 1995), page 305ff.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-State_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/State_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] state-pattern-solves-behavior-change-and-new-state-extensibility
+The State pattern solves two problems: objects need behavior that changes with internal state, and new states must be addable without modifying existing state classes.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-State_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/State_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] state-pattern-eliminates-rigid-conditionals-with-polymorphism
+The State pattern eliminates rigid conditionals by replacing if/switch logic with polymorphism.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-State_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/State_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] strategy-pattern-also-known-as-policy-pattern
+The Strategy pattern is also known as the Policy pattern.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Strategy_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Strategy_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] strategy-pattern-implemented-via-function-pointer-first-class-function-class-instance-reflection
+A Context can store a Strategy reference via a function pointer, first-class function, class instance, or reflection.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Strategy_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Strategy_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] strategy-pattern-eliminates-conditional-logic-with-polymorphic-dispatch
+The Strategy pattern eliminates conditional logic such as if/else or switch on type by replacing it with polymorphic dispatch.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Strategy_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Strategy_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] policy-based-design-is-cpp-template-equivalent-of-strategy
+Policy-Based Design is the C++ template-based equivalent of the Strategy pattern, selecting algorithms at compile time rather than runtime.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Strategy_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Strategy_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] higher-order-functions-achieve-strategy-effect-without-class-ceremony
+In functional programming, passing a function as an argument achieves the same effect as the Strategy pattern without the class ceremony.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Strategy_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Strategy_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] aggregate-is-specialization-of-composite-adding-aggregation-methods
+Aggregate is a specialization of Composite that adds aggregation methods over children.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Structural_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Structural_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] adapter-pipeline-chains-multiple-adapters
+Adapter Pipeline chains multiple adapters and is useful for debugging.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Structural_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Structural_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] retrofit-interface-pattern-adapts-new-interface-for-multiple-classes
+The Retrofit Interface Pattern is an Adapter variant that adapts a new interface for multiple classes simultaneously.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Structural_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Structural_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] tombstone-is-intermediate-lookup-technique-related-to-bridge
+Tombstone is an intermediate-lookup technique related to the Bridge pattern.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Structural_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Structural_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] marker-interface-is-empty-interface-used-for-metadata-tagging
+A Marker Interface is an empty interface used for metadata tagging.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Structural_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Structural_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] pipes-and-filters-pattern-linear-chain-output-feeds-next-stage
+Pipes and Filters is a linear chain where each stage's output feeds the next stage.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Structural_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Structural_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] opaque-pointer-hides-implementation-behind-private-type
+Opaque Pointer hides implementation behind an undeclared or private type.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Structural_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Structural_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] template-method-defines-algorithm-skeleton-in-superclass-method
+The Template Method pattern defines the skeleton of an algorithm in a superclass method, deferring specific steps to subclasses.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Template_method_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Template_method_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] template-method-runtime-uses-self-message-dispatch
+At runtime, the Template Method executes via self-message dispatch: the base class sends a message to self, and polymorphism routes it to a subclass's overridden implementation if one exists.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Template_method_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Template_method_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] generation-gap-pattern-splits-generated-abstract-superclass-and-handwritten-subclass
+In the Generation Gap pattern, generated code forms the abstract superclass and hand-written customizations go in subclasses, preventing regeneration from overwriting custom code.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Template_method_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Template_method_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] template-method-documented-gof-1994-pages-325-330
+Template Method is defined by the Gang of Four in Design Patterns (1994), pages 325–330.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Template_method_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Template_method_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] template-method-distinct-from-template-processor
+The Template Method pattern is distinct from the Template processor, an unrelated text-substitution concept.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Template_method_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Template_method_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] visitor-pattern-composite-traversal-delegates-accept-to-children
+In the Visitor pattern, when an element contains children, its accept method iterates over children calling child.accept(visitor) before or after calling visitor.visit(this).
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Visitor_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Visitor_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] visitor-pattern-go-requires-distinct-visit-method-names
+In Go, because the language lacks method overloading, Visitor pattern visit methods must have distinct names such as visitWheel and visitEngine instead of being overloaded by element type.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Visitor_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Visitor_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] visitor-pattern-enables-public-api-extensibility
+The Visitor pattern enables public API extensibility by allowing clients to add operations via visitors without modifying library source code.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Visitor_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Visitor_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] visitor-pattern-iterator-substitution-limitations
+The Visitor pattern can substitute for iteration over containers but does not provide easy break-out from traversal or concurrent traversal.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Visitor_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Visitor_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] visitor-vs-strategy-externalization-difference
+Strategy pattern replaces an algorithm within a single class, whereas Visitor pattern adds operations across an entire class hierarchy.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Visitor_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Visitor_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
+
+### [ACCEPT] visitor-pattern-supports-srp
+In the Visitor pattern, each visitor encapsulates a single cross-cutting operation, supporting the Single Responsibility Principle.
+- Source: /home/forge/workspace/entries/2026/06/19/wiki-Visitor_pattern.md
+- Source URL: https://en.wikipedia.org/wiki/Visitor_pattern
+- Model: openai:rits/deepseek-ai/DeepSeek-V4.1-Flash-1017
 
